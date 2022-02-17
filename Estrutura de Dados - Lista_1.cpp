@@ -84,3 +84,88 @@ int main()
 return EXIT_SUCCESS;
 }
 
+// 5.ª) Apresentar todos os valores numéricos inteiros ímpares situados na faixa de 0 a 20.
+
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std; 
+
+int main() 
+{
+ int i=1;
+ while (i<=20)
+ {
+     if(i%2){
+    cout << i << endl;
+    }
+     i++;
+ }
+ return 0;
+}
+
+// 6.ª) Faça um programa que apresente o total da soma obtido dos cem primeiros números inteiros. (1+2+3+4+......+100)
+
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std; 
+
+int main() 
+{
+ int i=1, soma = 0;
+ while (i<=100)
+ {
+    soma = soma + i;
+     i++;
+ }
+ cout << soma << endl;
+ return 0;
+}
+
+// 7.ª) Faça um programa que apresente a série de Fibonacci até o décimo quinto termo. A série é formada pela seqüência: 1,1,2,3,5,8,13,21,34,....,etc.
+
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std; 
+
+int main() 
+{
+ int i=1, soma=0, fb1=1, fb2=0 ;
+ while (i<=15)
+ { 
+    soma = fb1 + fb2;
+    fb1 = fb2;
+    fb2 = soma;
+    cout << soma << endl;
+     i++;
+ }
+ return 0;
+}
+
+// 8.a.) . Faça um programa que leia 15 valores e informe o valor da diferença entre a média e o maior valor.
+
+#include <iostream>
+#include<stdlib.h>
+#include<cstdlib>
+ 
+using namespace std; 
+
+int main() 
+{ 
+ int i, vl[15], med, soma, calc1=0, maior=0;
+ for (i=0;i<15;i++){
+     cout << "Insira um valor: "; cin >> vl[i];
+     soma = calc1 + vl[i];
+     calc1 = calc1 + vl[i];
+     
+     if(vl[i]>maior)
+     maior = vl[i];
+}
+med = soma/i;
+cout <<"Media =" << med << endl;
+cout <<"O maior numero =" << maior << endl;
+cout <<"A diferenca e =" << maior-med << endl;
+return EXIT_SUCCESS;
+}
