@@ -44,7 +44,7 @@ using namespace std;
 
 int main() 
 { 
- int r, h, V; 
+ float r, h, V; 
  cout<< "Insira o valor do raio da lata de oleo: ";
  cin >>r; 
  cout<< "Insira o valor da altura da lata de oleo: ";
@@ -139,7 +139,7 @@ int main()
     fb1 = fb2;
     fb2 = soma;
     cout << soma << endl;
-     i++;
+    i++;
  }
  return 0;
 }
@@ -156,7 +156,7 @@ int main()
 { 
  int i, vl[15], med, soma, calc1=0, maior=0;
  for (i=0;i<15;i++){
-     cout << "Insira um valor: "; cin >> vl[i];
+     cout << "Insira o " << i + 1 << "o valor: "; cin >> vl[i];
      soma = calc1 + vl[i];
      calc1 = calc1 + vl[i];
      
@@ -169,3 +169,4 @@ cout <<"O maior numero eh =" << maior << endl;
 cout <<"A diferenca entre eles eh =" << maior-med << endl;
 return EXIT_SUCCESS;
 }
+
