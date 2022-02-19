@@ -164,9 +164,9 @@ int main()
      maior = vl[i];
 }
 med = soma/i;
-cout <<"Media eh igual a =" << med << endl;
-cout <<"O maior numero eh =" << maior << endl;
-cout <<"A diferenca entre eles eh =" << maior-med << endl;
+cout <<"Media eh igual a = " << med << endl;
+cout <<"O maior numero eh = " << maior << endl;
+cout <<"A diferenca entre eles eh = " << maior-med << endl;
 return EXIT_SUCCESS;
 }
 
