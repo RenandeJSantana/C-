@@ -10,10 +10,10 @@ Pop(P); Push(P,e);
 Pop(P); 
  
 Operação 	Estado 	Resultado 
----------- 	    P: [ ] 	        ----------- 
-Push(P,a) 	    P: [ a ] 	      ----------- 
-Push(P,b) 	    P: [ b,a ] 	    ----------- 
-Push(P,c) 	    P: [ c,b,a ]  	----------- 
+---------- 	P: [ ] 	        ----------- 
+Push(P,a) 	P: [ a ] 	----------- 
+Push(P,b) 	P: [ b,a ] 	----------- 
+Push(P,c) 	P: [ c,b,a ]  	----------- 
 Push(P,Top(P)) 	P: [ c,c,b,a ] 	c 
 Push(P,Pop(P)) 	P: [ c,c,b,a ] 	c 
 Pop(P)        	P: [ c,b,a ]  	c 
@@ -155,6 +155,7 @@ cout<< "Digite uma palavra: ";
 //gets(palavra);   //entrada de dados
 cin>>palavra;
 t= strlen(palavra);  //strlen conta a qtde caracteres
+
 //empilhar os caracteres através do laço for
 for (i=0;i<t;i++)
 	{
