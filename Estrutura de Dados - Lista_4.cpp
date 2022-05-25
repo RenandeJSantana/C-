@@ -200,7 +200,6 @@ char palavra [30];
 int t;  //tamanho da palavra (qtos caracteres ela tem?)
 int i;  //contador do laço
 char x;  //armazena apenas 1 caracter
-//char z [30]; // palavra invertida
 string z;
 cout<< "Digite uma palavra: ";
 //gets(palavra);   //entrada de dados
@@ -221,18 +220,7 @@ cout << "Palavra = " << palavra << " Invertida = " ;
 while (!pilhavazia(&P1))
 	{
 	x=Pop(&P1);
-	//if(x==palavra[i]){
- 
-	//i++;
-	//cout << "E uma palindroma" <<endl;
-	//}
-	//else
-	//        {
-	//        cout << "Nao e palindroma"<<endl;
-	//        }
 	cout <<x;
-	//z[c] = x;
-	//c++;
 	z +=x;
 	}
 
