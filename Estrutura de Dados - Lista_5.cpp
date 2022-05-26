@@ -61,8 +61,6 @@ while (op!=5)
 			system("CLS"); 
 			cout<<"Entre com um valor : "; 
 			cin>>elem; 
-
-			//iniPilha(&P,elem); 
 			Push(&P,elem); 
 			} 
 		break; 
@@ -93,14 +91,10 @@ while (op!=5)
 			} 
 		else 
 			{ 
-			// y=Push(&P); /*armazena o índice do primeiro elemento da pilha*/ 
-			// while (!pilhavazia(&P)) 
-			//{ 
 			y=Top(&P); 
 			cout  << "O valor do topo eh " << y;
 			cout << endl; 
 			} 
-		//y= Top(&P); /*retorna para o primeiro elemento da pilha*/ 
 		system("PAUSE"); 
 		break; 
 
@@ -113,19 +107,6 @@ while (op!=5)
 			x=Pop(&P2); 
 			cout <<x; 
 			cout << endl;
-			//int Pop(struct Pilha*ps) 
-			//if (pilhacheia(&P2)==1) 
-			//{ 
-			//cout <<"A Pilha está cheia!!"; 
-			//} 
-			//else 
-			//{ 
-  			// while (!pilhavazia(&P2))
-			//{ 
-			//i=Pop(&P2); 
-			//cout <<i;}  
-			//cout<<"Exibe a Pilha : "; 
-			//cout<< &P; 
 			} 
 		system ("Pause"); 
 		break; 
